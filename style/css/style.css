@@ -1,21 +1,70 @@
-body {
+/* ===== Scroll snapping ===== */
+.scroll-container {
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+}
+
+.scroll-item {
+    scroll-snap-align: start;
+    overflow: visible; /* allow shadow to escape */
+}
+
+/* ===== Algemene styling ===== */
+* {
     scroll-behavior: smooth;
 }
 
+::-webkit-scrollbar {
+    display: none;
+}
 header {
     background: #0d6efd;
     color: white;
-    padding: 80px 0;
+    height: 100vh;
     text-align: center;
+    position: relative;
 }
 
+/* Naam en header centreren */
+#naam {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#header {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Project images */
 .project-card img {
     max-height: 150px;
     object-fit: cover;
 }
 
+/* Footer */
 footer {
+    width: 100%;
     background: #f8f9fa;
     padding: 20px;
     text-align: center;
+
+    /* Top shadow */
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 99;
+}
+
+#item2{
+    padding-top: 5rem;
+    height: 82vh;
+    overflow: scroll;
+}
+.scroll-item:last-child {
+    padding-bottom: 20px; /* height of footer */
+    
 }

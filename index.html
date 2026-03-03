@@ -5,163 +5,258 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Mijn Portfolio</title>
+
     <link rel="stylesheet" href="style/css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
 </head>
 
 <body>
-    <!---- Nav bar ---->
+
+    <!-- ===== NAVBAR ===== -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <div class="container-fluid">
             <a class="navbar-brand" href="#home">Portfolio</a>
+
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
+
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#profile">Profiel</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#opleiding">Opleiding</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#projects">Projecten</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#studymonitor">Studiemonitor</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#profile1">Profiel</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#Opleiding1">Opleiding</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects1">Projecten</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#Studiemonitor1">Studiemonitor</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact1">Contact</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <!---- Home ---->
-    <header id="home">
-        <div class="container">
-            <h1 class="display-4">Welkom op mijn Portfolio</h1>
-            <p class="lead">Bekijk mijn projecten, opleiding en profiel!</p>
-            <p>
-                <a href="www.linkedin.com/in/pepijn-vh-759792391" class="btn btn-light m-1">LinkedIn</a>
-                <a href="mailto:250905@student.scalda.nl" class="btn btn-light m-1">Email</a>
-                <a href="https://github.com/Mepijn2" class="btn btn-light m-1">GitHub</a>
-            </p>
+
+    <div class="scroll-container">
+
+        <!-- ===== HOME ===== -->
+        <div class="scroll-item">
+            <header id="home">
+                <div id="naam">
+                    <h1>Pepijn Van Hove</h1>
+                </div>
+
+                <div id="header">
+                    <h1 class="display-1">Welkom op mijn Portfolio</h1>
+                    <p class="lead">Bekijk mijn projecten, opleiding en profiel!</p>
+
+                    <a href="https://www.linkedin.com/in/pepijn-vh-759792391" class="btn btn-light m-1">LinkedIn</a>
+                    <a href="mailto:250905@student.scalda.nl" class="btn btn-light m-1">Email</a>
+                    <a href="https://github.com/Mepijn2" class="btn btn-light m-1">GitHub</a>
+                    
+                </div>
+            </header>
         </div>
-    </header>
 
-    <!---- Persoonlijk gegevens ---->
-    <section id="profile" class="container py-5">
-        <h2>Persoonlijk Profiel</h2>
-        <p><strong>Wie ben ik:</strong> [Vul in]</p>
-        <p><strong>Sterke kanten:</strong> [Vul in]</p>
-        <p><strong>Minder sterke kanten:</strong> [Vul in]</p>
-        <p><strong>Skills:</strong> [Vul in]</p>
-        <p><strong>Teamrollen:</strong> [Vul in]</p>
-        <p><strong>Bijbaantjes:</strong> [Vul in]</p>
-        <p><strong>Hobby's en ambities:</strong> [Vul in]</p>
-    </section>
+        <!-- ===== PROFIEL ===== -->
+        <div class="scroll-item" id="item2">
+            <div class="">
+                <div class="accordion container py-4" id="profile1">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingProfile">
+                            <button class="accordion-button bg-white" id="buttonProfile" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseProfile">
+                                <h3 class="m-0">Persoonlijk Profiel</h3>
+                            </button>
+                        </h2>
 
-    <!---- Opleiding ---->
-    <section id="opleiding" class="bg-light py-5">
-        <div class="container">
-            <h2>Mijn Opleiding</h2>
-            <p><strong>Welke opleiding:</strong> [Vul in]</p>
-            <p><strong>Waarom gekozen:</strong> [Vul in]</p>
-            <p><strong>Waarom past dit beroep bij mij:</strong> [Vul in]</p>
-        </div>
-    </section>
-
-    <!---- Projecten ---->
-    <section id="projects" class="container py-5">
-        <h2>Projecten</h2>
-        <div class="row g-4">
-            <div class="col-md-4">
-                <div class="card project-card">
-                    <img src="https://via.placeholder.com/300x150" class="card-img-top" />
-                    <div class="card-body">
-                        <h5 class="card-title">Project 1</h5>
-                        <p class="card-text">Korte uitleg van het project.</p>
-                        <a href="#" class="btn btn-primary">Bekijk code</a>
+                        <div id="collapseProfile" class="accordion-collapse collapse">
+                            <div class="accordion-body">
+                                <p><strong>Wie ben ik:</strong> Pepijn Van hove</p>
+                                <p><strong>Sterke kanten:</strong> Front-End, logisch nadenken</p>
+                                <p><strong>Minder sterke kanten:</strong> Te precies, werk soms te lang door</p>
+                                <p><strong>Skills:</strong> HTML/CSS/JS, Java, Teamwork</p>
+                                <p><strong>Teamrol:</strong> Plant</p>
+                                <p><strong>Bijbaantjes:</strong> FSH Computerzaak</p>
+                                <p><strong>Hobby's:</strong> Coderen, Skaten, Muziek</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4">
-                <div class="card project-card">
-                    <img src="https://via.placeholder.com/300x150" class="card-img-top" />
-                    <div class="card-body">
-                        <h5 class="card-title">Project 2</h5>
-                        <p class="card-text">Korte uitleg van het project.</p>
-                        <a href="#" class="btn btn-primary">Bekijk code</a>
+
+            <!-- ===== OPLEIDING ===== -->
+            <div class=" bg-light">
+                <div class="accordion container py-4" id="Opleiding1">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button bg-white" id="buttonOpleiding" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOpleiding">
+                                <h3 class="m-0">Mijn Opleiding</h3>
+                            </button>
+                        </h2>
+
+                        <div id="collapseOpleiding" class="accordion-collapse collapse">
+                            <div class="accordion-body">
+                                <p><strong>Opleiding:</strong> Software Development - Scalda</p>
+                                <p><strong>Waarom gekozen:</strong> Interesse in hardware & software</p>
+                                <p><strong>Waarom past dit bij mij:</strong> Ik ben erg geïnteresseerd</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4">
-                <div class="card project-card">
-                    <img src="https://via.placeholder.com/300x150" class="card-img-top" />
-                    <div class="card-body">
-                        <h5 class="card-title">Project 3</h5>
-                        <p class="card-text">Korte uitleg van het project.</p>
-                        <a href="#" class="btn btn-primary">Bekijk code</a>
+
+            <!-- ===== PROJECTEN ===== -->
+            <div class="">
+                <div class="accordion container py-4" id="projects1">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button bg-white" id="buttonProjects" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseProjects">
+                                <h3 class="m-0">Projecten</h3>
+                            </button>
+                        </h2>
+
+                        <div id="collapseProjects" class="accordion-collapse collapse">
+                            <div class="accordion-body">
+                                <div class="row g-4">
+
+                                    <div class="col-md-4">
+                                        <div class="card project-card">
+                                            <img src="https://via.placeholder.com/300x150" class="card-img-top">
+                                            <div class="card-body">
+                                                <h5>Project 1</h5>
+                                                <p>Korte uitleg van het project.</p>
+                                                <a class="btn btn-primary">Bekijk code</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-4">
+                                        <div class="card project-card">
+                                            <img src="https://via.placeholder.com/300x150" class="card-img-top">
+                                            <div class="card-body">
+                                                <h5>Project 2</h5>
+                                                <p>Korte uitleg van het project.</p>
+                                                <a class="btn btn-primary">Bekijk code</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-4">
+                                        <div class="card project-card">
+                                            <img src="https://via.placeholder.com/300x150" class="card-img-top">
+                                            <div class="card-body">
+                                                <h5>Project 3</h5>
+                                                <p>Korte uitleg van het project.</p>
+                                                <a class="btn btn-primary">Bekijk code</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- ===== STUDIEMONITOR ===== -->
+            <div class=" bg-light">
+                <div class="accordion container py-4" id="Studiemonitor1">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button bg-white" id="buttonStudiemonitor" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseStudymonitor">
+                                <h3 class="m-0">Studiemonitor</h3>
+                            </button>
+                        </h2>
+
+                        <div id="collapseStudymonitor" class="accordion-collapse collapse">
+                            <div class="accordion-body">
+                                <table class="table table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th>Vak</th>
+                                            <th>Cijfer</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Programmeren 1</td>
+                                            <td>--</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Web Development</td>
+                                            <td>--</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Databases</td>
+                                            <td>--</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                                <button class="btn btn-primary">Bijwerken</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- ===== CONTACT ===== -->
+            <div class="">
+                <div class="accordion container py-4" id="contact1">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button bg-white" id="buttonContact" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseContact">
+                                <h3 class="m-0">Contact</h3>
+                            </button>
+                        </h2>
+
+                        <div id="collapseContact" class="accordion-collapse collapse">
+                            <div class="accordion-body">
+
+                                <form>
+                                    <div class="mb-3">
+                                        <label class="form-label">Naam</label>
+                                        <input class="form-control" type="text">
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <label class="form-label">Email</label>
+                                        <input class="form-control" type="email">
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <label class="form-label">Bericht</label>
+                                        <textarea rows="4" class="form-control"></textarea>
+                                    </div>
+
+                                    <button class="btn btn-primary">Verstuur</button>
+                                </form>
+
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
 
-    <!---- Studiemonitor ---->
-    <section id="studymonitor" class="bg-light py-5">
-        <div class="container">
-            <h2>Studiemonitor</h2>
-            <table class="table table-striped">
-                <thead>
-                    <tr>
-                        <th>Vak</th>
-                        <th>Cijfer</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Programmeren 1</td>
-                        <td>--</td>
-                    </tr>
-                    <tr>
-                        <td>Web Development</td>
-                        <td>--</td>
-                    </tr>
-                    <tr>
-                        <td>Databases</td>
-                        <td>--</td>
-                    </tr>
-                </tbody>
-            </table>
+
+
+        <!-- ===== FOOTER ===== -->
+        
+            <footer>
+                <p>Mijn Portfolio</p>
+                <p>Pepijn Van hove</p>
+            </footer>
         </div>
-    </section>
-
-
-    <!---- Contact ---->
-    <section id="contact" class="container py-5">
-        <h2>Contact</h2>
-        <form>
-            <div class="mb-3">
-                <label class="form-label">Naam</label>
-                <input type="text" class="form-control" />
-            </div>
-            <div class="mb-3">
-                <label class="form-label">Email</label>
-                <input type="email" class="form-control" />
-            </div>
-            <div class="mb-3">
-                <label class="form-label">Bericht</label>
-                <textarea class="form-control" rows="4"></textarea>
-            </div>
-            <button class="btn btn-primary">Verstuur</button>
-        </form>
-    </section>
-
-    <!---- Footer ---->
-    <footer>
-        <p>Mijn Portfolio</p>
-        <p>Voor school project</p>
-    </footer>
-
-    <!---- Eigen script ---->
+    </div>
     <script src="script/js/script.js"></script>
-
-    <!---- BS5 script ---->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 
 </html>
